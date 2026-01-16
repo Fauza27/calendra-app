@@ -35,7 +35,7 @@ export const ScheduleTable = pgTable("schedules", {
 })
 
 export const scheduleRelations = relations(ScheduleTable, ({ many }) => ({
-    availablties: many(ScheduleAvailabilityTable),
+    availabilities: many(ScheduleAvailabilityTable),
 }))
 
 export const scheduleDayOfWeekEnum = pgEnum("day", DAYS_OF_WEEK_IN_ORDER)
